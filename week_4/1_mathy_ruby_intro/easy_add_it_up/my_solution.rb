@@ -42,5 +42,12 @@ def sentence_maker array
 end
 
 # 3. Refactored Solution
+def total array
+	return array.reduce(:+)
+end
+
+def sentence_maker array
+	return array.join(" ").capitalize + "."
+end
 
 # 4. Reflection 
