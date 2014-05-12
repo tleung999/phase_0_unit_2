@@ -22,6 +22,24 @@
 
 
 # 2. Initial Solution
+def total array
+	sum = 0
+	array.each do |x|
+		sum = sum + x
+	end
+	return sum
+end
+
+
+def sentence_maker array
+	sentence = ""
+	first = array.shift.capitalize + " "
+	last = array.pop + "."
+	array.each do |x|
+		sentence = sentence << x.to_s + " "
+	end
+	return sentence = first + sentence + last
+end
 
 # 3. Refactored Solution
 
