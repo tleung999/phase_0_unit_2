@@ -10,7 +10,7 @@
 # What is the input? 
 #Looks like it is taking in an array
 # What is the output? (i.e. What should the code return?)
-#Shoudl return the median from an array set
+#Should return the median from an array set
 # What are the steps needed to solve the problem?
 #Create a method called median which can take in 1 array argument
 #Sort array in ascending order (smallest to largest)
@@ -24,9 +24,17 @@
 
 
 # 2. Initial Solution
-
-
-
+def median array
+	med = ""
+	sorted = array.sort
+	if array.length % 2 == 0 then
+		med = sorted[(array.length/2-1)].to_f + sorted[(array.length/2)].to_f
+		med = med/2
+	else 
+		med = sorted[(array.length/2).ceil]
+	end
+		return med
+end
 
 # 3. Refactored Solution
 
