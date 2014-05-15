@@ -66,7 +66,6 @@ out the first array element, capitalizing that, poping out the last array elemen
 in between and then finally put it all together.   Ruby-doc.org really helped bring back how to write the syntax.
 
 During the refactor solution part, I recalled the enumerable class and it has a lot of short hand ways of doing thing.  So 
-I went there to look up some ways to simplify things.   I tried to challenge myself by making the method only one line long
-and returning the results all at once.   It was really fun to see it done so easily.    I didnt find the challenge tedious,
+I went there to look up some ways to simplify things.   It was really fun to see it done so easily.    I didnt find the challenge tedious,
 the challenge was straight forward and clear on exactly what we needed to do.   
 =end
