@@ -57,14 +57,11 @@ end
 # 3. Refactored Solution
 class Array 
 	def pad  (padnum, padvalue = nil)
-		@newarr = self.clone
-		@newarr.fill(padvalue, @newarr.length..padnum-1)
-		@newarr
+		self.clone.pad!(padnum, padvalue)
 	end
 
 	def pad! (padnum, padvalue = nil)
 		self.fill(padvalue, self.length..padnum-1)
-		self
 	end
 end
 # 4. Reflection 
