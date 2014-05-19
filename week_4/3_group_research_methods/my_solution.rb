@@ -74,11 +74,11 @@ end
 
 # Person 4
 def my_array_deletion_method(source, thing_to_delete)
-	source.find_all do |value|
+  source.find_all do |value|
     if value.index(thing_to_delete) != nil
 		  source.delete(value)
     end
-	end
+  end
   source.length.times do |index|
     if ('0'..'9').include?(source[index])
       source[index] = source[index].to_i
