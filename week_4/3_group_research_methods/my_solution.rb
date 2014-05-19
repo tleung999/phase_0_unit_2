@@ -92,7 +92,10 @@ def my_hash_deletion_method(source, thing_to_delete)
 end
 
 # Identify and describe the ruby method you implemented. 
-# The ruby method I implemented is the delete method.  Delete is really simple and straight forward to use
+# The ruby method I implemented is the find_all method to search for all values in the array instead of using each.
+# This method act pretty much the same as using .each. It will find all occurances of what you specify in the block
+#
+# I also used the delete method.  Delete is really simple and straight forward to use.
 # You just need to take the array pass it to the delete method and specify what array or hash key you 
 # want deleted.   For my array example up above.    I had to iterate through the 
 # array intially since I was only given the letter of what they wanted deleted.
@@ -107,12 +110,11 @@ end
 #the delete method, set the key to thing_to_delete and it will return the source array without the key they 
 #want deleted.  
 #
-#I also added the find_all method to search for all values in the array instead of using each.
-#This method act pretty much the same as using .each.
 #
 #Also on both version of delete, there is an optional default value.   I just set it to equal the string "Nothing to delete."
 #if it doesnt find anything that matches.
 #Documentation here
+#http://www.ruby-doc.org/core-2.1.1/Enumerable.html#method-i-find_all
 #http://www.ruby-doc.org/core-2.1.2/Array.html#method-i-delete
 #http://www.ruby-doc.org/core-2.1.2/Hash.html#method-i-delete
 
