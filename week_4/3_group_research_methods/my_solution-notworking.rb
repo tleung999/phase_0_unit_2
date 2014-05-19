@@ -27,20 +27,26 @@ end
 
 # Person 2
 def my_array_modification_method(source, thing_to_modify)
-  source.map! do |element|
-    if (element.is_a? Integer)
-      element += thing_to_modify
-    else
-      element
+  source = Hash[source.map {|x| [x, x]}]
+  new_array = []
+  source.each { |key, value| key
+    if key.kind_of? String
+    else 
+      value = value + thing_to_modify
+      source[key] = value
     end
-  end
-  source
+  }
+  source.each { |key, value| value
+    new_array.push(source[key])
+    }
+  new_array
 end
 
 def my_hash_modification_method(source, thing_to_modify)
-  source.map do |key, val| 
-    source[key] = val + thing_to_modify
-  end
+  source.each {|key, value| value
+  value = value + thing_to_modify
+  source[key] = value
+  }
   source
 end
 
@@ -74,7 +80,8 @@ end
 
 # Person 4
 def my_array_deletion_method(source, thing_to_delete)
-	source.find_all do |value|
+	
+  source.each do |value|
     if value.index(thing_to_delete) != nil
 		  source.delete(value)
     end
@@ -106,9 +113,6 @@ end
 #it to delete and specify what key you want deleted.    So in my example, I took the source array, passed it to 
 #the delete method, set the key to thing_to_delete and it will return the source array without the key they 
 #want deleted.  
-#
-#I also added the find_all method to search for all values in the array instead of using each.
-#This method act pretty much the same as using .each.
 #
 #Also on both version of delete, there is an optional default value.   I just set it to equal the string "Nothing to delete."
 #if it doesnt find anything that matches.
