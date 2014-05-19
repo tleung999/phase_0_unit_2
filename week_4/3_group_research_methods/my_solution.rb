@@ -76,7 +76,7 @@ end
 def my_array_deletion_method(source, thing_to_delete)
   source.find_all do |value|
     if value.index(thing_to_delete) != nil
-		  source.delete(value)
+      source.delete(value)
     end
   end
   source.length.times do |index|
