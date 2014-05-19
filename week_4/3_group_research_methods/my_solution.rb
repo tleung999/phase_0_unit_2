@@ -87,8 +87,8 @@ def my_array_deletion_method(source, thing_to_delete)
   source
 end
 def my_hash_deletion_method(source, thing_to_delete)
-  		source.delete(thing_to_delete) { "Nothing to delete" }
-	source
+  source.delete(thing_to_delete) { "Nothing to delete" }
+  source
 end
 
 # Identify and describe the ruby method you implemented. 
