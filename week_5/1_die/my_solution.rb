@@ -81,10 +81,5 @@ p chkerror == "Please enter the number of sides 1 or larger"
 
 # 5. Reflection 
 =begin
-So making sure I read up on Classes and how to create them was important
-in building my Class correctly. Also reading up on how to raise an exception 
-error was needed to write my ArgumentError correctly.  Only big question
-I had was how to write a driver code to check for an argument.    The rest of the 
-challenge was pretty easy.   Nothing was tedious.   I am very confident with the
-learning competencies.  
+So making sure I read up on Classes and how to create them was important in building my Class correctly. Also reading up on how to raise an exception error was needed to write my ArgumentError correctly.  Only big question I had was how to write a driver code to check for an argument. The rest of the challenge was pretty easy.   Nothing was tedious.   I am fairly confident with the learning competencies.  Instance variable are only available to the instance of the class. So when you create a new instance of Die using mydie = Die.new(3), mydie has a set of variables from the Die class that is available to it and no one else.   Every other instance of the class has a different set of instance variables.
 =end

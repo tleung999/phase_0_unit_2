@@ -1,6 +1,6 @@
 # U2.W5: A Nested Array to Model a Boggle Board
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself, with: John Akers ].
 
 boggle_board = [["b", "r", "a", "e"],
                 ["i", "o", "d", "t"],
