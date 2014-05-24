@@ -78,7 +78,6 @@ class CreditCard
         @card_number[index] = @card_number[index] * 2 #double the number
       end
     end
-    @card_number.reverse!  #reverse back to normal
     #iterate through the array again 
     @card_number.each do |value| 
       if value >= 10        
