@@ -44,6 +44,7 @@ end
 =end
 # 4. Refactored Solution
 class Die
+  
   def initialize(sides)
     @sides = sides
     unless sides >= 1
