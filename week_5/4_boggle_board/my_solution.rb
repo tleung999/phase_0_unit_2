@@ -52,8 +52,6 @@ p get_row(1) ==  ["i", "o", "d", "t"]
 # Reflection 
 #When john and I worked together, we we're trying out different ways to display the row information in IRB and found simply using boggle_board[row] to be the best solution.   We also changed the boggle_board to a global variable.   I dont know if that is cheating, but that is our way to accessing the board without having to pass the board into the method.
 
-
-<<<<<<< HEAD
 #-------------------------------------------------------------------------------
 
 # Part 3: Now write a method that takes a column number and returns all the elements in the column.
@@ -102,6 +100,3 @@ p get_col(1) == ["r", "o", "c", "a"]
 
 # Reflection
 # We knew we had to iterate through the board since each column element is located on different array rows.   So we set the column to be the 2nd array index and the first index is the counter as you iterate x times based on the length of the board.   John also tried a secondary solution to see how we can do it using a counter.    Though its not idea to make your variable global, setting boggle_board to global took care of the second argument passing and it allowed us to easily read its values.   When we finished this last part, we thought there is probably no way to refactored the code.   But then we talked about if we can flip flop the rows and columns.   Then John mentioned a matrix and I did a search on Google for changing rows to columns matrix in ruby.   We ended up finding the Matrix class in the docs and there was an example of transpose.    I really didnt think this was going to work, but it worked flawlessly.   We made the code much leaner using transpose.   We really enjoyed this challenge, it was fun learning by trying things out in IRB and working together to come up with different ideas.    
-
-=======
->>>>>>> upstream/master
