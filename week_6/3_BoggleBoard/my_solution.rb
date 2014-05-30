@@ -42,6 +42,7 @@ class BoggleBoard
 
 	def get_diagonal(startcord, endcord)
 		diagonal_word = []
+		raise "These coordinates does not make a diagonal" unless startcord.inject(:-).abs == endcord.inject(:-).abs
 		
 		until (startcord == endcord) do
 				diagonal_word << @board[startcord.first][startcord.last]		
